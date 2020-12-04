@@ -14,7 +14,7 @@ def traverse_map(tree_map, x_speed, y_speed):
 
 
 if __name__ == '__main__':
-    tree_map = utils.read_file_lines('day3.test')
+    tree_map = utils.read_file_lines('input/day03.test')
     assert traverse_map(tree_map, 3, 1) == 7
     slopes_product = traverse_map(tree_map, 1, 1)
     slopes_product *= traverse_map(tree_map, 3, 1)
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     slopes_product *= traverse_map(tree_map, 1, 2)
     assert slopes_product == 336
 
-    tree_map = utils.read_file_lines('day3.input')
+    tree_map = utils.read_file_lines('input/day03.input')
     print(traverse_map(tree_map, 3, 1))
     slopes_product = traverse_map(tree_map, 1, 1)
     slopes_product *= traverse_map(tree_map, 3, 1)

@@ -14,10 +14,10 @@ def find_entries(entries, number_of_entries):
 
 
 if __name__ == '__main__':
-    entries = [int(entry) for entry in utils.read_file_lines('day1.test')]
+    entries = [int(entry) for entry in utils.read_file_lines('input/day01.test')]
     assert find_entries(entries, 2) == 514579
     assert find_entries(entries, 3) == 241861950
 
-    entries = [int(entry) for entry in utils.read_file_lines('day1.input')]
+    entries = [int(entry) for entry in utils.read_file_lines('input/day01.input')]
     print(find_entries(entries, 2))
     print(find_entries(entries, 3))

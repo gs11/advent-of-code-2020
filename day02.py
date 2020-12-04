@@ -23,10 +23,10 @@ def find_valid_passwords(policy_passwords, is_valid_func):
 
 
 if __name__ == '__main__':
-    policy_passwords = utils.read_file_lines('day2.test')
+    policy_passwords = utils.read_file_lines('input/day02.test')
     assert find_valid_passwords(policy_passwords, is_valid_sled_rental) == 2
     assert find_valid_passwords(policy_passwords, is_valid_toboggan) == 1
 
-    policy_passwords = utils.read_file_lines('day2.input')
+    policy_passwords = utils.read_file_lines('input/day02.input')
     print(find_valid_passwords(policy_passwords, is_valid_sled_rental))
     print(find_valid_passwords(policy_passwords, is_valid_toboggan))

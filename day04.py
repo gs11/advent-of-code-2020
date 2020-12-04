@@ -73,15 +73,15 @@ def count_valid_passports(passports):
 
 
 if __name__ == '__main__':
-    passports = read_passwords('day4.test')
+    passports = read_passwords('input/day04.test')
     complete_passports = find_complete_passports(passports)
     assert len(complete_passports) == 2
 
-    passports = read_passwords('day4.test2')
+    passports = read_passwords('input/day04.test2')
     complete_passports = find_complete_passports(passports)
     assert count_valid_passports(complete_passports) == 4
 
-    passports = read_passwords('day4.input')
+    passports = read_passwords('input/day04.input')
     complete_passports = find_complete_passports(passports)
     print(len(complete_passports))
     print(count_valid_passports(complete_passports))
